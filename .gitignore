@@ -1,0 +1,15 @@
+# 編譯產物
+maze_game
+*.exe
+*.out
+*.o
+*.obj
+
+# 編譯中間檔
+*.log
+*.tmp
+
+# IDE 設定檔
+.vscode/
+.idea/
+.DS_Store
