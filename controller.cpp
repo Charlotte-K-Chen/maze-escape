@@ -24,3 +24,11 @@ void Controller::run() {
 
         Position original = player.getPosition();
         player.move(input);
+        if (!maze.isWall(player.getPosition())) {
+            // 有移動，P會自動顯示在新位置
+        } else {
+            // 撞牆就回原位
+            player.setPosition(original);
+        }
+    }
+}
